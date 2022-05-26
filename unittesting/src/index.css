@@ -1,13 +1,278 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+
+
+
+*{
+  padding: 0;
+  margin: 0 ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: #25262b;
+}
+
+.signup-container{
+  width: 100%;
+  height: 100%;
+}
+
+.signup-content{
+  color: rgba(255,255,255,0.5);
+  padding-top: 50px;
+  margin: auto;
+  margin-top: 12%;
+  width: 500px;
+  height: 500px;
+  background-color: #2f3037;
+  border-radius: 7px;
+  box-shadow: 2px 2px 7px rgba(0,0,0,0.2);
+}
+.signup-content  h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: underline overline;
+  margin-left: 35%;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 3px rgba(0,255,0,0.3);
+}
+.signup-content  h2{
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 40px;
+}
+
+.signup-field{
+  text-align: center;
+  color: rgba(255,255,255,0.3);
+  font-family: Arial, sans-serif;
+  padding-top: 15px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  width: 85%;
+  height: 30px;
+  background-color: #28292f;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2) inset;
+}
+
+.sign-btn{
+  text-align: center;
+  color: #25262b;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  padding-top: 15px;
+  margin: auto;
+  margin-left: 52%;
+  margin-top: 30px;
+  border-radius: 30px;
+  width: 40%;
+  height: 30px;
+  background-color: rgba(0,255,0,0.6);
+  box-shadow: 2px 2px 9px rgba(0,0,0,0.4);
+}
+.sign-btn:hover{
+  background-color: rgba(52, 253, 52, 0.9);
+  cursor: pointer;
+  color: rgba(0,0,0,0.2);
+}
+
+.cancel-btn{
+  float: left;
+  margin-left: 70px;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+.cancel-btn:hover{
+  cursor: pointer;
+  filter: invert(50%)
+}
+
+
+
+
+
+
+
+
+
+
+
+.main-title{
+  color: rgba(255,255,255,0.5);
+  font-size: 25px;
+  float: left;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: underline overline;
+  text-shadow: 2px 2px 3px rgba(0,255,0,0.3);
+}
+
+.side-nav{
+  float: left;
+  background-color: #2f3037;
+  height: 100vh;
+  width: 17%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.menu{
+  width: 40px;
+  height: 40px;
+  margin-left: 80%;
+  margin-top: 10px;
+  background-image: url(../src/assests/icons/menu.png);
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.menu:hover{
+  filter: invert(100%);
+  cursor: pointer;
+}
+
+.nav-container{
+  margin: auto;
+  margin-top: 40px;
+  width: 90%;
+  height: 80%;
+  font-family: 'Raleway', sans-serif;
+  color: rgba(255,255,255,0.4);
+}
+.nav-container h4{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.nav-item{
+  padding-top: 15px;
+  margin: auto;
+  margin-top: 20px;
+  width: 200px;
+  height: 40px;
+  border-radius: 14px;
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+.nav-item:hover{
+  cursor: pointer;
+  background-color: rgba(0,255,0,0.6);
+  text-decoration: underline;
+}
+
+.nav-acc{
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 10px;
+  width: 200px;
+  height: 25px;
+  border-radius: 14px;
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  font-size: 10px;
+}
+.nav-acc-add{
+  width: 80px;
+}
+.nav-acc:hover{
+  box-shadow: 3px 3px 7px rgba(0,0,0,0.4) inset;
+  color: rgba(255,255,255,0.2);
+}
+.add-icon{
+  margin: auto;
+  width: 15px;
+  height: 15px;
+  background-image: url(../src/assests/icons/addicon.png);
+  filter: invert(20%);
+  background-size: 60%;
+  background-position: center;
+}
+
+
+.main-content{
+  width: 80%;
+  height: 100vh;
+ float: right;
+}
+
+.title-space{
+  font-family: 'Raleway', sans-serif;
+  color: rgba(255,255,255,0.7);
+  width: 50%;
+  height: 70px;
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+.dash-block{
+  width: 350px;
+  height: 250px;
+  border-radius: 12px;
+  background-color: #2f3037;
+  float: left;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  font-family: 'Raleway', sans-serif;
+  color: rgba(255,255,255,0.7);
+  font-size: 11px;
+  overflow: hidden;
+}
+.dash-block h1{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.transaction-template{
+  width: 100%;
+  height: 50px;
+  margin-top: 23px;
+}
+.details{
+  margin-top: 5px;
+  margin-left: 70px;
+}
+.transaction-template h4{
+  font-family: 'Roboto Mono';
+  float:right;
+  margin-top: -20px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+.transaction-template-icon{
+  background-color: #3f424a;
+  float: left;
+  border-radius: 5px;
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+h5{
+  font-family: 'Roboto Mono';
+  font-size: 25px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.bar-icon{
+  margin: auto;
+  width: 250px;
+  height: 200px;
+  background-image: url(../src/assests/icons/bar.png);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pay-amount{
+ margin-left: 120px;
+ margin-top: -110px;
 }
